@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Components</title>
+  <link href='/style.css' rel='stylesheet'>
+  <script defer src="https://cdn.jsdelivr.net/gh/Jonathan-0A/AG-Components/v1.25.2/components.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer type="text/javascript" src="/script.js"></script>
+</head>
+<body>
+  <nav>
+    <div id="ag_title" ag-title="AG Components">
+      AG Components
+    </div>
+    <div id="ag_right">
+      <span>v1.25.2</span>
+      <i class="bi bi-github"></i>
+    </div>
+  </nav>
+  <div id="notifications"></div>
+  <div class="section">
+    <div class="sub">
+      To use the Notify function, 
+      You have to add this code in the body tag of your html file : 
+      <div class="br"></div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="<div id='notifications'></div>" readonly>
+      </div>
+      Otherwise the Notify function won't work in your code.
+    </div>
+    <div class="sub">
+      <div class="bdy">
+        <input type="text" value="NotifySuccess(text, duration (in seconds))" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="NotifySuccess('This is a success message')" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="NotifySuccess('This is a success message', 3)" readonly>
+      </div>
+      <div class="bottom">
+        <button class="ag_button" id="success">Success</button>
+      </div>
+    </div>
+    <div class="sub">
+      <div class="bdy">
+        <input type="text" value="NotifyError(text, duration (in seconds))" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="NotifyError('This is a error message')" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="NotifyError('This is a error message', 3)" readonly>
+      </div>
+      <div class="bottom">
+        <button class="ag_button" id="error">Error</button>
+      </div>
+    </div>
+    <div class="sub">
+      <div class="bdy">
+        <input type="text" value="NotifyWarning(text, duration (in seconds))" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="NotifyWarning('This is a warnign message')" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="NotifyWarning('This is a warnign message', 3)" readonly>
+      </div>
+      <div class="bottom">
+        <button class="ag_button" id="warning">Warning</button>
+      </div>
+    </div>
+    <div class="sub">
+      <div class="bdy">
+        <input type="text" value="NotifyInfo(text, duration (in seconds))" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="NotifyInfo('This is a info message')" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="NotifyInfo('This is a info message', 3)" readonly>
+      </div>
+      <div class="bottom">
+        <button class="ag_button" id="info">Infrmation</button>
+      </div>
+    </div>
+    <div class="sub">
+      <div class="bdy">
+        <input type="text" value="Confirm(message, title)" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="Confirm('This is message', 'This is title')" readonly>
+      </div>
+      <div class="bdy">
+        <input type="text" onclick="copyCode(this)" value="Confirm('This is message')" readonly>
+      </div>
+      <div class="bottom">
+        <button class="ag_button" id="confirmBtn">Confirm Box</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
