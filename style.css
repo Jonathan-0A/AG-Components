@@ -66,13 +66,10 @@ body {
 }
 
 #response {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 35px;
+    top: 50%;
     z-index: 11;
     background: #434352;
     padding: 5px 10px;
