@@ -34,12 +34,11 @@ function copyCode(comp) {
     response("Copied");
 }
 function response(text) {
-    const response = document.createElement('div')
+    const response = document.querySelector('#response')
 
-    response.setAttribute('id', 'response')
     response.innerHTML = text
-    document.body.appendChild(response)
+    response.style.display = 'flex'
     setTimeout(() => {
-        response.remove()
+        response.style.display = 'none'
     }, 1000)
 }
