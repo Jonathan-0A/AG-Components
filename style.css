@@ -9,6 +9,32 @@
 }
 
 :root {
+    ::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+        position: fixed;
+        border-radius: 3px;
+        opacity: 1;
+        background: var(--green);
+    }
+    ::-webkit-scrollbar-button {
+        background: none;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+        display: none;
+    }
+    ::-webkit-scrollbar-track-piece {
+        display: none;
+    }
+    ::-webkit-scrollbar-corner {
+        background-color: transparent;
+        opacity: 0;
+        display: none;
+        border-radius: 50%;
+    }
+
     --dark-color: rgb(21, 15, 35);
     --light-color: #fff;
     --shadow-color: rgba(0, 0, 0, 0.1);
@@ -27,6 +53,7 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
 .ag_button {
     height: 35px;
     width: 125px;
@@ -37,6 +64,7 @@ body {
     color: aliceblue;
     background: var(--green);
 }
+
 #response {
     display: flex;
     align-items: center;
@@ -50,6 +78,7 @@ body {
     padding: 5px 10px;
     border-radius: 7px;
 }
+
 nav {
     height: 55px;
     width: 100vw;
@@ -68,33 +97,40 @@ nav {
     padding: 0 20px;
     z-index: 10;
 }
-nav #ag_left, nav #ag_right {
+
+nav #ag_left,
+nav #ag_right {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #ag_title {
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     color: aliceblue;
 }
+
 nav #ag_right {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+
 nav #ag_right span {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding: 5px 9px;
 }
+
 nav #ag_right .bi {
     font-size: 25px;
     font-weight: 800;
     cursor: pointer;
     margin: 0 11px;
 }
+
 .section {
     width: 97vw;
     margin: 17px;
@@ -108,6 +144,7 @@ nav #ag_right .bi {
     flex-wrap: wrap;
     border-radius: 10px;
 }
+
 .sub {
     width: 25rem;
     padding: 9px;
@@ -120,12 +157,14 @@ nav #ag_right .bi {
     color: rgb(180, 180, 180);
     box-shadow: 0 0 10px var(--dark-color);
 }
+
 .bdy {
     border-radius: 7px;
     width: 100%;
     margin-bottom: 13px;
     background: rgba(65, 65, 65, 0.35);
 }
+
 .bdy input {
     width: 100%;
     height: 100%;
@@ -137,9 +176,7 @@ nav #ag_right .bi {
     font-family: monospace;
     cursor: copy;
 }
+
 .br {
     height: 13px;
 }
-
-
-
